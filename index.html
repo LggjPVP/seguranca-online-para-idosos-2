@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegar em Segurança - Guia Digital para a Terceira Idade</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="corpo-pagina" id="corpo-aplicacao">
+
+    <div class="barra-acessibilidade">
+        <div class="conteudo-barra-acessibilidade">
+            <span style="font-weight: 600;">
+                <i class="fa-solid fa-universal-access" aria-hidden="true"></i> Opções de Acessibilidade:
+            </span>
+            <div class="grupo-botoes-acessibilidade">
+                <button onclick="alternarTamanhoTexto()" class="botao-acessibilidade" aria-label="Aumentar Tamanho da Letra">
+                    <i class="fa-solid fa-text-height"></i> <span id="rotulo-tamanho-texto">Aumentar Letra</span>
+                </button>
+                <button onclick="alternarAltoContraste()" class="botao-acessibilidade" aria-label="Ativar Alto Contraste">
+                    <i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="cabecalho-principal">
+        <div class="contentor-cabecalho">
+            <div class="icone-cabecalho">
+                <i class="fa-solid fa-shield-halved simbolo-escudo"></i>
+            </div>
+            <h1 class="titulo-principal">Internet Segura para a Terceira Idade</h1>
+            <p class="subtitulo-principal">
+                Aprenda a navegar no telemóvel e no computador com tranquilidade, proteção e sem medos!
+            </p>
+        </div>
+    </header>
+
+    <nav class="menu-navegacao">
+        <div class="conteudo-menu-navegacao">
+            <a href="#seccao-perigos" class="botao-navegacao">
+                <i class="fa-solid fa-triangle-exclamation icone-menu-perigo"></i> Principais Perigos
+            </a>
+            <a href="#seccao-regras" class="botao-navegacao">
+                <i class="fa-solid fa-lightbulb icone-menu-regras"></i> Regras de Ouro
+            </a>
+            <a href="#seccao-simulador" class="botao-navegacao">
+                <i class="fa-solid fa-gamepad icone-menu-teste"></i> Teste o seu Conhecimento
+            </a>
+            <a href="#seccao-ajuda" class="botao-navegacao">
+                <i class="fa-solid fa-phone icone-menu-ajuda"></i> Pedir Ajuda
+            </a>
+        </div>
+    </nav>
+
+    <main class="conteudo-principal">
+
+        <section class="cartao-boas-vindas">
+            <div>
+                <h2 class="titulo-boas-vindas">Bem-vindo(a) ao seu Guia Digital!</h2>
+                <p class="texto-boas-vindas">
+                    A tecnologia ajuda-nos a conversar com os netos, fazer compras e ver notícias. Mas é preciso ter atenção com os burlões digitais. Clique no botão ao lado para ouvir esta explicação!
+                </p>
+            </div>
+            <button onclick="ouvirExplicacao('Bem-vindo ao seu Guia Digital! A tecnologia ajuda-nos a conversar com a família e a ver notícias. Mas é preciso ter atenção com os burlões digitais. Explore o site para aprender a proteger-se.')" class="botao-audio">
+                <i class="fa-solid fa-volume-high" style="font-size: 1.25rem;"></i> Ouvir Explicador
+            </button>
+        </section>
+
+        <section id="seccao-perigos" class="ancora-seccao">
+            <div class="cabecalho-seccao-perigos">
+                <h2 class="titulo-seccao-perigos">Atenção a estes 4 Golpes Frequentes</h2>
+                <p class="subtitulo-seccao-perigos">Entenda como os burlões agem para não cair em armadilhas.</p>
+            </div>
+
+            <div class="grelha-perigos">
+                <div class="cartao-perigo">
+                    <div class="cabecalho-cartao-perigo">
+                        <div class="icone-perigo icone-fundo-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="titulo-cartao-perigo">1. O Falso Filho no WhatsApp</h3>
+                    </div>
+                    <p class="descricao-cartao-perigo">
+                        Enviam uma mensagem de um número desconhecido a dizer: <em>"Olá mãe/pai, troquei de número. Preciso de pagar uma conta urgente, podes fazer uma transferência?"</em>
+                    </p>
+                    <div class="alerta-perigo">
+                        <p class="texto-alerta-titulo">
+                            <i class="fa-solid fa-triangle-exclamation"></i> O que NUNCA fazer:
+                        </p>
+                        <p class="texto-alerta-descricao">Nunca envie dinheiro sem ligar primeiro para o número antigo do seu familiar para confirmar!</p>
+                    </div>
+                </div>
+
+                <div class="cartao-perigo">
+                    <div class="cabecalho-cartao-perigo">
+                        <div class="icone-perigo icone-fundo-sms">
+                            <i class="fa-solid fa-comment-sms"></i>
+                        </div>
+                        <h3 class="titulo-cartao-perigo">2. Mensagens Falsas (SMS)</h3>
+                    </div>
+                    <p class="descricao-cartao-perigo">
+                        Mensagens a dizer que tem uma encomenda pendente nos CTT, uma multa por pagar ou pontos a expirar, acompanhadas de uma hiperligação (link).
+                    </p>
+                    <div class="alerta-perigo">
+                        <p class="texto-alerta-titulo">
+                            <i class="fa-solid fa-triangle-exclamation"></i> O que NUNCA fazer:
+                        </p>
+                        <p class="texto-alerta-descricao">Nunca carregue em hiperligações enviadas por números ou contactos desconhecidos.</p>
+                    </div>
+                </div>
+
+                <div class="cartao-perigo">
+                    <div class="cabecalho-cartao-perigo">
+                        <div class="icone-perigo icone-fundo-chamada">
+                            <i class="fa-solid fa-phone-slash"></i>
+                        </div>
+                        <h3 class="titulo-cartao-perigo">3. Chamada do "Gerente do Banco"</h3>
+                    </div>
+                    <p class="descricao-cartao-perigo">
+                        Alguém liga a dizer que a sua conta foi invadida e pede que confirme passwords, códigos por SMS ou transfira dinheiro para uma "conta segura".
+                    </p>
+                    <div class="alerta-perigo">
+                        <p class="texto-alerta-titulo">
+                            <i class="fa-solid fa-triangle-exclamation"></i> O que NUNCA fazer:
+                        </p>
+                        <p class="texto-alerta-descricao">Desligue imediatamente! O banco nunca pede passwords ou transferências por telefone.</p>
+                    </div>
+                </div>
+
+                <div class="cartao-perigo">
+                    <div class="cabecalho-cartao-perigo">
+                        <div class="icone-perigo icone-fundo-premio">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <h3 class="titulo-cartao-perigo">4. Ganhou um Prémio!</h3>
+                    </div>
+                    <p class="descricao-cartao-perigo">
+                        Anúncios na internet a dizer que ganhou um telemóvel novo ou uma viagem, mas pedem dados bancários ou o pagamento de uma taxa.
+                    </p>
+                    <div class="alerta-perigo">
+                        <p class="texto-alerta-titulo">
+                            <i class="fa-solid fa-triangle-exclamation"></i> O que NUNCA fazer:
+                        </p>
+                        <p class="texto-alerta-descricao">Não acredite em milagres. Se não participou em nenhum concurso, não ganhou nada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccao-regras" class="seccao-regras ancora-seccao">
+            <h2 class="titulo-seccao-regras">
+                <i class="fa-solid fa-shield-cat" style="color: #7c3aed; margin-right: 0.5rem;"></i> As 4 Regras de Ouro da Segurança
+            </h2>
+
+            <div class="grelha-regras">
+                <div class="cartao-regra">
+                    <span class="numero-regra">1</span>
+                    <div>
+                        <h4 class="titulo-regra">Desconfie do Urgente</h4>
+                        <p class="descricao-regra">Os burlões usam a pressa para assustar. Pare, respire e pense antes de agir.</p>
+                    </div>
+                </div>
+
+                <div class="cartao-regra">
+                    <span class="numero-regra">2</span>
+                    <div>
+                        <h4 class="titulo-regra">Guarde as Passwords</h4>
+                        <p class="descricao-regra">As suas palavras-passe são secretas como a chave da sua casa. Nunca as dê a ninguém.</p>
+                    </div>
+                </div>
+
+                <div class="cartao-regra">
+                    <span class="numero-regra">3</span>
+                    <div>
+                        <h4 class="titulo-regra">Confirme por Chamada</h4>
+                        <p class="descricao-regra">Se um amigo ou familiar pedir dinheiro, ligue diretamente para ele a voz para confirmar.</p>
+                    </div>
+                </div>
+
+                <div class="cartao-regra">
+                    <span class="numero-regra">4</span>
+                    <div>
+                        <h4 class="titulo-regra">Peça Ajuda</h4>
+                        <p class="descricao-regra">Se tiver dúvidas sobre uma mensagem, peça a um familiar de confiança para ver consigo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccao-simulador" class="seccao-simulador ancora-seccao">
+            <div class="cabecalho-simulador">
+                <span class="etiqueta-jogo">Jogo Prático</span>
+                <h2 class="titulo-simulador">O que faria nesta situação?</h2>
+                <p class="subtitulo-simulador">Leia a história abaixo e escolha a melhor opção:</p>
+            </div>
+
+            <div class="caixa-pergunta">
+                <div class="cabecalho-pergunta">
+                    <i class="fa-solid fa-envelope-open-text icone-mensagem-quiz"></i>
+                    <p class="texto-pergunta-quiz">
+                        Recebeu uma SMS a dizer: <em>"A sua conta do banco precisa de atualização imediata para não ser bloqueada. Clique em: www.bancofalso.com"</em>.
+                    </p>
+                </div>
+
+                <div id="opcoes-quiz">
+                    <button onclick="verificarRespostaQuiz(false)" class="botao-resposta-quiz">
+                        <span>A) Clico no link imediatamente para resolver a situação rápido.</span>
+                        <i class="fa-regular fa-circle" style="color: #9ca3af;"></i>
+                    </button>
+
+                    <button onclick="verificarRespostaQuiz(true)" class="botao-resposta-quiz">
+                        <span>B) Apago a mensagem e não clico em nada. Contacto o meu banco se tiver dúvidas.</span>
+                        <i class="fa-regular fa-circle" style="color: #9ca3af;"></i>
+                    </button>
+
+                    <button onclick="verificarRespostaQuiz(false)" class="botao-resposta-quiz">
+                        <span>C) Envio a minha palavra-passe de acesso para o número que me mandou a mensagem.</span>
+                        <i class="fa-regular fa-circle" style="color: #9ca3af;"></i>
+                    </button>
+                </div>
+
+                <div id="resposta-feedback-quiz" class="caixa-feedback-quiz"></div>
+            </div>
+        </section>
+
+        <section id="seccao-ajuda" class="seccao-ajuda ancora-seccao">
+            <div>
+                <h2 class="titulo-seccao-ajuda">
+                    <i class="fa-solid fa-hand-holding-hand"></i> Caiu num golpe ou tem dúvidas?
+                </h2>
+                <p class="subtitulo-seccao-ajuda">
+                    Não tenha vergonha! Isto pode acontecer a qualquer pessoa. O mais importante é agir rapidamente:
+                </p>
+                <ul class="lista-instrucoes-ajuda">
+                    <li><strong>Ligue para o seu Banco:</strong> Peça o bloqueio imediato dos seus cartões e da conta.</li>
+                    <li><strong>Informe as Autoridades (PSP / GNR):</strong> Faça queixa das burlas para tentar reaver o dinheiro e proteger outros idosos.</li>
+                    <li><strong>Fale com um familiar:</strong> Peça auxílio a alguém de confiança para rever as suas contas digitais.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-principal">
+        <div class="conteudo-rodape">
+                <span class="texto-projeto-rodape">Projeto de Sensibilização Digital</span>
+            </div>
+            <p class="descricao-rodape">
+                Promovendo uma internet mais inclusiva, calma e segura para todas as idades.
+            </p>
+            <div class="divisao-rodape">
+                <p class="texto-autor">
+                    Desenvolvido por: <span class="autor-destaque">Stephannie Da Silva Ribeiro</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
